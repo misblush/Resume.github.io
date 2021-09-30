@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lnag="en">
+  <head>
+        <meta charset="UTF-8" >
+        <meta http-equiv="X-UA-compatibile" content="IE=edge" >
+        <meta name="viewport" content="width=device-with, initial-scale=1.0" >
+        
+        <title>Resume Generator</title>
+       
+        <link rel="stylesheet" href="style.css">
+<style>
+    label{
+        width: 100px;
+        display:inline-block;
+        margin: 4px;
+    
+    }
+    .container{
+        display: grid;
+       grid-template-columns: 600px 600px 600px;
+       grid-gap: 2rem;
+    }
+    .item{
+      
+        margin-left: 50%;
+        font-size: 15px;
+       
+        
+    }
+.cv-tamlet{
+    display: grid;
+    grid-template-columns: 400px 800px;
+}
+    
+</style>
+       
+        
+      </head>
+   <body>
+    <h1>Resume Generator</h1>
+
+<div class="container" id="CV-form">
+    
+    <div class="item">
+        <h3>Personal information </h3>
+        <label for="namefield">Your name</label>
+        <input type="text" id="namefield"  placeholder="Enter here" class="form-control">
+        <br/> 
+        <label for="contactfield">Contact number</label>
+        <input type="text" id="contactfield"  placeholder="Enter here" class="form-control">
+        <br/>
+        <label for="addressfield">Address</label>
+        <textarea  id="addressfirld"  placeholder="Enter your address" class="form-control" rows="2px"></textarea>
+        <br>
+
+        <p class="text-secondary">Important links </p>
+        <br>
+        <label for="Emailfield">Email ID</label>
+        <input type="text" id="Emailfield"  placeholder="Enter your mail ID" class="form-control">
+        <br>
+        <label for="FBfield">Facebook ID</label>
+        <input type="text" id="FBfield"  placeholder="Enter your Facebook ID" class="form-control">
+        <br>
+        <label for="linkedfield">Linkedin ID</label>
+        <input type="text" id="linkedfield"  placeholder="Enter your Linkedin ID" class="form-control">
+
+    </div>
+  
+    <div class="item" >
+        <h3>Professional information</h3>
+        <label for="objectivefield">Objective</label>
+        <textarea  placeholder="Enter here" class="form-control " ></textarea>
+        <br>
+        <label for="academicield">Academics</label>
+        <textarea  placeholder="Enter here" class="form-control wefield" ></textarea>
+         <br>
+        <label for="wefield">Work Exprence</label>
+        <textarea  placeholder="Enter here" class="form-control wefield" ></textarea>
+        <br>
+          
+    </div>
+    <br>
+               <button class="mybutton">Generate CV</button>
+               <br>
+
+               
+</div>
+<br>
+
+
+<div class="container" id="cv-template">
+    
+
+    <div class="resume">
+        <div class="resume_left">
+          <div class="resume_profile">
+            <img src="m.png" alt="profile_pic">
+          </div>
+          <div class="resume_content">
+            <div class="resume_item resume_info">
+              <div class="title">
+                <p class="bold">mohummad mubassir tolgi</p>
+    
+              </div>
+              <ul>
+                <li>
+                  <div class="icon">
+                    <i class="fas fa-map-signs"></i>
+                  </div>
+                  <div class="data">
+                    Qrt no.D11 Himdalco colony belgaum<br/> karnataka,INDIA 
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+                  <div class="data">
+                    +918495946473
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="data">
+                     mubassirtolgi@gmail.com
+                  </div>
+                </li>
+                
+                </li>
+              </ul>
+            </div>
+            <div class="resume_item resume_skills">
+              <div class="title">
+                <p class="bold">skill's</p>
+              </div>
+              <ul>
+                <li>
+                  <div class="skill_name">
+                    HTML
+                  </div>
+                  <div class="skill_progress">
+                    <span style="width: 80%;"></span>
+                  </div>
+                  <div class="skill_per">80%</div>
+                </li>
+                <li>
+                  <div class="skill_name">
+                    CSS
+                  </div>
+                  <div class="skill_progress">
+                    <span style="width: 70%;"></span>
+                  </div>
+                  <div class="skill_per">70%</div>
+                </li>
+                
+                <li>
+                  <div class="skill_name">
+                    JS
+                  </div>
+                  <div class="skill_progress">
+                    <span style="width: 60%;"></span>
+                  </div>
+                  <div class="skill_per">60%</div>
+                </li>
+               
+              </ul>
+            </div>
+            <div class="resume_item resume_social">
+              <div class="title">
+                <p class="bold">Social</p>
+              </div>
+              <ul>
+                <li>
+                  <div class="icon">
+                    <i class="fab fa-facebook-square"></i>
+                  </div>
+                  <div class="data">
+                    <p class="semi-bold">Facebook</p>
+                    <p>mubassirtolgi@facebook</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fab fa-twitter-square"></i>
+                  </div>
+                  <div class="data">
+                    <p class="semi-bold">Twitter</p>
+                    <p>mubassir06@twitter</p>
+                  </div>
+                </li>
+                <li>
+                    <div class="icon">
+                      <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="data">
+                      <p class="semi-bold">Linkedin</p>
+                      <p>MubassirT@linkedin</p>
+                    </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+       </div>
+       <div class="resume_right">
+         <div class="resume_item resume_about">
+             <div class="title">
+                <p class="bold">Objective</p>
+              </div>
+             <p>Looking for a chanllenging career which demands the best of my professional ability in terms of technical and analytical skills
+                 and help me in brodening and enhancing my current skills and knowledge
+             </p>
+         </div>
+         <div class="resume_item resume_work">
+             <div class="title">
+                <p class="bold">Work Experience</p>
+              </div>
+             <ul>
+                 <li>
+                     <div class="info">
+                          <p class="semi-bold">Internship</p> 
+                       <p>Pursuing four weeks of Web Designing and Website Development course from the company IC solutions</p>
+                     </div>
+                 </li>
+                 <li>
+                   <div class="info">
+                          <p class="semi-bold">Internship</p> 
+                       <p>Completed four week of Internship in (Introduction to the internet of things and Embedded system ) from COURSERA</p>
+                     </div>
+                 </li>
+                 <li>
+                   <div class="info">
+                          <p class="semi-bold">College Project</p> 
+                       <p>working on the college projet</p>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+         <div class="resume_item resume_education">
+           <div class="title">
+                <p class="bold">Academics</p>
+              </div>
+           <ul>
+                 <li>
+                     <div class="date">2019 - 2022</div> 
+                     <div class="info">
+                          <p class="semi-bold">Bachelor's Degree</p> 
+                       <p>Pursuing my Bacheionlor's degree in Electronics and Commination Engineering </p>
+                     </div>
+                 </li>
+                 <li>
+                   <div class="date">2016 - 2019</div>
+                   <div class="info">
+                          <p class="semi-bold">Diploma</p> 
+                       <p>Completed my 3 years of Diploma course in Electronics and communication Engineering with an aggregate of 78.6%</p>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+         <div class="resume_item resume_hobby">
+           <div class="title">
+                <p class="bold">Hobby</p>
+              </div>
+            <ul>
+              <li><i class="fas fa-book"></i></li>
+              <li><i class="fas fa-gamepad"></i></li>
+              <li><i class="fas fa-music"></i></li>
+              <li><i class="fab fa-pagelines"></i></li>
+           </ul>
+         </div>
+       </div>
+     </div>
+    
+    </div>
+
+</div>
+
+
+
+       <script src="script.js"></script>
+   </body>
+
+
+
+
+</html>
